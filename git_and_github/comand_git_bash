@@ -1,0 +1,5 @@
+#Usando o bash do git!
+# o comand line abaixo nos permite abrir e encripitar com o SHA1 o arquivo descrito apos o comand line
+#o SHA1 encripita o arquivo gerando uma string de 40 caracteres, o mais interessante é que ele detecta se houver a mudança basica de uma virgula no codigo.
+
+$ openssl sha1 texto.txt
