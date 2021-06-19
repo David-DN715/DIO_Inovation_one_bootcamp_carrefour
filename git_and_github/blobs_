@@ -1,0 +1,20 @@
+# blobs!
+#objetos fundamentais (Blobs)
+
+#a função abaixo usa o echo para chamar uma string 'conteudo' e passa pela função do git tratando como objeto, o stdin está lá para informar que estamos passando uma string!
+$ echo 'conteudo' | git hash-object --stdin
+
+#agora sem usar a função git, usando o Sha1:
+# ocasiona-ra na mesma situação a diferença é a encriptação feita pelo sha1
+$ echo -e 'conteudo' | openssl sha1
+
+#Acontece que devido a manipuação de arquivos dentro do git, o blob armazena e encripta o arquivo pois dentro de uma blob tem metadados 
+# formato de blob: \0tipodearquivo
+
+#agora podemos ver melhor a estrutura do blob assim>
+#mesmo procedimento de antes"
+$ echo 'conteudo' | git hash-object --stdin
+
+#usando blob!
+#o blob é o tamnhanho do blob = 9, + o objeto dentro da blob!
+$ echo -e 'blob 9\0conteudo' | openssl sha1
