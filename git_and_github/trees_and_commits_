@@ -1,0 +1,8 @@
+#objetos fundamentais (trees!)
+
+#As arvores tambem contem metadados, ela contem os blobs, os blobs ainda tem seus sha1, e as arvores tambem tem o sha1, elas apontam para as blobs!
+
+
+#Commits!
+
+#o commit ele aponta para as trees apontam tambem para um parente do mesmo commit ou seja, um commit anterior, aponta o autor do arquivo, aponta a menssagem do arquivo.
