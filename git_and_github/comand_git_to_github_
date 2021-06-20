@@ -1,0 +1,22 @@
+#O comand line abaixo passa o status de git
+$git config --list
+
+#O comando abaixo permite modificar um desses status!
+$git config --global --unset.nome nome_a_ser_usado_
+
+$git config --global --unset.email email@aserusado.com
+
+
+#o comand line abaixo permite iniciar a adicionar arquivos do git para github!
+
+$git remote add origin https://...
+
+#lista as origins
+$git remote -v
+
+#o comand line abaixo é para verificar se não tem nenhuma pendencia no repositorio!
+$git status
+
+#o comand line abaixo nos permite empurrar o nosso repositorio local para um repositorio em "nuvem" servidor!
+$git push origin master
+
