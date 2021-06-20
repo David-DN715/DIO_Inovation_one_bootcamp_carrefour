@@ -1,0 +1,50 @@
+#On windows O.S. comand in git!
+
+#O comand line abaixo permite iniciar o git diretamente do bash ou cmd_git
+$git init
+
+#Os comands lines abaixo permitem adicionar o arquivo ao git levando para o 'stage' ou melhor dizendo preparação para finalizar!
+$git add 
+$git add *
+$git add.
+
+#O comand line abaixo permite finalizar a adição do arquivo do stage para o commit finalizando o processo.
+$git commit
+
+#O comand line abaixo é uma melhoria do de cima, deixando inserir uma menssagem ao arquivo no momento do commit!
+$git commit -m 'msg..'
+
+#o comand line abaixo dentro do bash do git lista tudos arquivos e pastas dentro do repositorio!
+$ls
+
+#O comand line abaixo cria um arquivo
+$echo ''
+
+#O comand line abaixo permite criar um arquivo!
+$mkdir nome_do_arquivo
+
+#O comand line abaixo permite mostar o status do repositorio/pasta no qual está navegando!
+$git status
+
+#O comand line abaixo permite navegar entre os repositorios/pastas/arquivos!
+cd
+cd ..
+
+#leva a base dos diretorios!
+cd /
+
+#O comand line abaixo permite nos mostrar a lista de diretorios no qual vc se encontra!
+dir 
+
+#limpar o prompet!
+cls
+
+#usando o bash do git!
+ctrl + l
+
+#O comand line abaixo permite apagar arquivos em diretorios!
+del nome_do_arquivo
+
+#O camand line abaixo remove diretorios e arquivos no windows!
+rmdir nome_do_diretorio /S /Q
+
