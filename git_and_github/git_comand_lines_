@@ -48,3 +48,6 @@ del nome_do_arquivo
 #O camand line abaixo remove diretorios e arquivos no windows!
 rmdir nome_do_diretorio /S /Q
 
+#O comando abaixo mostra a lista de configurações do git!
+$git config --list
+
