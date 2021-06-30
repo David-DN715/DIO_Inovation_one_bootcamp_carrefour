@@ -8,6 +8,7 @@
 #SOAP Body – onde passamos os atributos os detalhes da mensagem. 
 
 #O SOAP abaixo foi feito atraves do Framework soapUI, com um SOAP aberto (Publico! <http://www.soapclient.com/xml/soapresponder.wsdl>)
+#Apenas ecoa o parametro enviado! mas bom para entender a estrutura SOAP!
 <soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://www.SoapClient.com/xml/SoapResponder.xsd">
    <soapenv:Header/>
    <soapenv:Body>
