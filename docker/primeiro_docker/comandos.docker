@@ -1,0 +1,39 @@
+#Docker help é o primeiro comando importante, e nos orienta em caso de esquecimento de um comando !
+$ docker help
+
+#O docker stats nos mostra qual container tem na estancia que estamos!
+$docker stats
+
+#utilizamos o comando abaixo para sair da tela no qual o stats nos deixou!
+ctrl + c
+
+#o comando abaixo tem a mesma função do ls ou dir !
+$ ls
+
+#o comando abaixo nos mostra a pasta que estamos!
+pwd
+
+#usamos o comando abaixo para fazer o pull da imagem do nginx pois não tinhamos nehuma ainda!
+$docker run --name meu-primeiro-container -p 80:80 -d nginx
+
+#usamos o comando abaixo para ver a imagem do repositorio local do nginx
+#docker images
+
+#usamos o comando abaixo para verificar os container que estão rodando em nosso docker!
+$docker ps
+
+#vamos tentar remover o container rodando!
+$docker rm "nome do container/ obs pode ser apenas o começo!"
+#irá falhar!
+
+#usamos esse comando aqui!
+$ docker rm -f "nome do container"
+
+#e usamos esse comando para verificar se realmente foi removido e parou de funcionar!
+$docker ps
+
+#verificamos se a imagem está ainda em nosso repositorio!
+$ docker images
+
+#removemos ela tambem!
+$docker rmi nginx
