@@ -2,29 +2,29 @@ import socket
 import sys
 
 def main():
+    #passamoso af_inet onde utliza do ip
+    #3soc_stream onde usamos o tcp
+    #passamoso protocolo que fara a conexão com o server 0
     try:
-        #dentro da biblioteca socket usaremos o metodo socket
-        #usaremos o IP por isso socket.AF_INET
-        #usamos o socket.SOCK_STREAM para usar o TCP
-        #e passamos por utimo o protocolo TCP para protocolo!
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM, 0)
     except socket.error as e:
-        print("Connection fail!")
-        print('ERRO: {}'.format(e))
+        print("Conexão falhou!")
+        print("ERRO: {}".format(e))
         sys.exit()
-    print("Socket criado com sucesso!")
 
-    hostalvo= input("Digite o host alvo:\n")
-    porta_alvo = input("Digite a porta a ser conectada:\n")
+    print("CONEXÃO SOCKET CRIADOCOM SUCESSO!")
+    hostalvo = input("Digite umhost ou ip a ser conectado:\n")
+    portalvo = input("Digite a porta a ser conectada:\n")
 
     try:
-        s.connect((hostalvo, int(porta_alvo)))
-        print(f"Cliente TCP conectado com sucesso no Host: {hostalvo} e na porta: {porta_alvo}")
+        s.connect((hostalvo,int(portalvo)))
+        print("Clientetcp conectadocom sucesso! no host:" +hostalvo,"na porta:" +portalvo)
         s.shutdown(2)
+
     except socket.error as e:
-        print(f'Não foi possivel conectar no host: {hostalvo} e na porta: {porta_alvo}')
-        print("Erro: {}".format(e))
+        print("A conexão falhou!")
+        print("ERRO {}".format(e))
         sys.exit()
 
-if __name__ =="__main":
+if __name__ == "__main__":
     main()
