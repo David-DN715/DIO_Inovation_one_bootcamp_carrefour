@@ -13,3 +13,19 @@ else:
     fib_list.append(count)
 fib_string = ' '.join(map(str, fib_list))
 print(fib_string)
+#-----------------------------------------------------------------------
+#New version!
+n = int(input('digite um numero\n'))
+n = n-1
+fib_list = []
+
+if (n ==1) or (n ==2):
+  count = n 
+  fib_list.append(count)
+else:
+  for i in range(0,n):
+    count = n 
+    n= n-1 
+    fib_list.append(count)
+fib_string = ' '.join(map(str, fib_list))
+print(fib_string)
